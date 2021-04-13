@@ -134,8 +134,8 @@ void tft_init(void)
 	DMA2D_Config();
 	disp_drv.gpu_blend_cb = gpu_mem_blend;
 	disp_drv.gpu_fill_cb = gpu_mem_fill;
-	disp_drv.sw_rotate = true;
 #endif
+	disp_drv.sw_rotate = true;
 	lv_disp_drv_register(&disp_drv);
 	lv_disp_set_rotation(NULL, LV_DISP_ROT_90);
 }
